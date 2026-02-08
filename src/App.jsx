@@ -1,63 +1,58 @@
-import { Users, Globe, Shield, MapPin, Building2, Clock } from "lucide-react";
-
 function App() {
   return (
-    <div style={{ fontFamily: "system-ui", lineHeight: 1.6 }}>
-      
-      {/* Hero */}
-      <section style={{ padding: "4rem 2rem", textAlign: "center" }}>
-        <h1>
-          Betting & iGaming Jobs <br />
-          <span style={{ color: "#0d9488" }}>in the Netherlands</span>
+    <div className="font-sans leading-relaxed text-gray-800">
+
+      {/* HERO */}
+      <section className="text-center py-20 px-6 bg-white">
+        <h1 className="text-4xl font-bold mb-4">
+          Find Your Next <span className="text-teal-600">iGaming Job</span>
         </h1>
-        <p style={{ maxWidth: 600, margin: "1rem auto" }}>
-          Connecting Dutch talent with licensed betting and iGaming companies
-          in the Netherlands and Malta.
+        <p className="text-lg text-gray-600 max-w-xl mx-auto">
+          Discover top opportunities in Malta, Europe, and worldwide.
         </p>
       </section>
 
-      {/* Value props */}
-      <section style={{ padding: "3rem 2rem" }}>
-        <h2 style={{ textAlign: "center" }}>Why Choose BettingJobs.nl?</h2>
-
-        <div style={{ display: "flex", gap: "2rem", justifyContent: "center", marginTop: "2rem" }}>
+      {/* VALUE PROPS */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <div>
-            <Users />
-            <h3>Dutch-Speaking Talent Pool</h3>
-            <p>Qualified professionals with Dutch language skills.</p>
+            <h3 className="text-xl font-semibold mb-2">Trusted Companies</h3>
+            <p className="text-gray-600">Work with verified and reputable brands.</p>
           </div>
 
           <div>
-            <Globe />
-            <h3>NL & Malta Focus</h3>
-            <p>Specialized in key European iGaming hubs.</p>
+            <h3 className="text-xl font-semibold mb-2">Global Reach</h3>
+            <p className="text-gray-600">Opportunities across Europe and beyond.</p>
           </div>
 
           <div>
-            <Shield />
-            <h3>Regulated Market Expertise</h3>
-            <p>Focus on licensed operators and compliance.</p>
+            <h3 className="text-xl font-semibold mb-2">Fast Hiring</h3>
+            <p className="text-gray-600">Streamlined recruitment for top talent.</p>
           </div>
         </div>
       </section>
 
-      {/* Jobs */}
-      <section style={{ padding: "3rem 2rem", background: "#f8fafc" }}>
-        <h2 style={{ textAlign: "center" }}>Featured Opportunities</h2>
+      {/* JOB CARDS */}
+      <section className="py-16 px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">Latest Jobs</h2>
 
-        <div style={{ display: "flex", gap: "2rem", justifyContent: "center", marginTop: "2rem" }}>
-          <div>
-            <h3>Compliance Officer</h3>
-            <p><Building2 /> Leading NL Operator</p>
-            <p><MapPin /> Amsterdam, NL</p>
-            <p><Clock /> Full-time</p>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="font-semibold text-lg mb-2">SEO Specialist</h4>
+            <p className="text-gray-600 mb-4">iGaming • Malta</p>
+            <button className="text-teal-600 font-medium hover:underline">View Job</button>
           </div>
 
-          <div>
-            <h3>CRM Manager</h3>
-            <p><Building2 /> iGaming Scale-up</p>
-            <p><MapPin /> Malta</p>
-            <p><Clock /> Full-time</p>
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="font-semibold text-lg mb-2">Product Manager</h4>
+            <p className="text-gray-600 mb-4">Remote • Europe</p>
+            <button className="text-teal-600 font-medium hover:underline">View Job</button>
+          </div>
+
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="font-semibold text-lg mb-2">Affiliate Manager</h4>
+            <p className="text-gray-600 mb-4">Hybrid • Malta</p>
+            <button className="text-teal-600 font-medium hover:underline">View Job</button>
           </div>
         </div>
       </section>
